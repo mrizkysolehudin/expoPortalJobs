@@ -9,6 +9,7 @@ import { Stack, useRouter } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
 import WelcomeSection from "../components/Home/WelcomeSection";
 import { useState } from "react";
+import PopularJobsSection from "../components/Home/PopularJobsSection";
 
 const HomeScreen = () => {
 	const avatar =
@@ -53,6 +54,8 @@ const HomeScreen = () => {
 						}
 					}}
 				/>
+
+				<PopularJobsSection />
 			</ScrollView>
 		</SafeAreaView>
 	);
