@@ -10,6 +10,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import WelcomeSection from "../components/Home/WelcomeSection";
 import { useState } from "react";
 import PopularJobsSection from "../components/Home/PopularJobsSection";
+import NearbyJobsSection from "../components/Home/NearbyJobsSection";
 
 const HomeScreen = () => {
 	const avatar =
@@ -56,6 +57,7 @@ const HomeScreen = () => {
 				/>
 
 				<PopularJobsSection />
+				<NearbyJobsSection />
 			</ScrollView>
 		</SafeAreaView>
 	);

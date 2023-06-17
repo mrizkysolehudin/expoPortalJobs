@@ -54,7 +54,7 @@ const PopularJobsSection = () => {
 						/>
 					)}
 					horizontal
-					contentContainerStyle={{ columnGap: 20, marginVertical: 10 }}
+					contentContainerStyle={{ columnGap: 20, marginTop: 10 }}
 					keyExtractor={(item) => item.job_id}
 				/>
 			)}
