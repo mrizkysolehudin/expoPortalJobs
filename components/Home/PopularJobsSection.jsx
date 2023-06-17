@@ -14,6 +14,7 @@ import { useRouter } from "expo-router";
 const PopularJobsSection = () => {
 	const { data, isLoading, error } = useFetch("search", {
 		query: "Frontend developer",
+		num_pages: "1",
 	});
 
 	const [selectedJob, setSelectedJob] = useState("");
@@ -54,7 +55,7 @@ const PopularJobsSection = () => {
 						/>
 					)}
 					horizontal
-					contentContainerStyle={{ columnGap: 20, marginTop: 10 }}
+					contentContainerStyle={{ columnGap: 20, marginVertical: 10 }}
 					keyExtractor={(item) => item.job_id}
 				/>
 			)}

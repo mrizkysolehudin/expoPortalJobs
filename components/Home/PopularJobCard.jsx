@@ -12,7 +12,7 @@ const PopularJobCard = ({ item, selectedJob, handleJobClick }) => {
 				width: 210,
 				paddingHorizontal: 10,
 				paddingTop: 20,
-				paddingBottom: 20,
+				paddingBottom: 5,
 				borderWidth: selectedJob == item?.job_id ? 1 : 0,
 				borderRadius: 10,
 			}}>
